@@ -1,0 +1,11 @@
+×°±¸£º
+	Name:string
+	Description£ºstring
+	Icon£ºstring
+	bgIcon£ºstring
+	itemCount£ºint
+	ID£ºint
+	Quality£ºint
+	ItemOpreation£ºint
+	ItemType£ºEnum
+	

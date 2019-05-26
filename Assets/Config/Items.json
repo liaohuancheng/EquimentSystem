@@ -1,0 +1,83 @@
+
+[
+	{"ItemID":1,
+	"ItemName":"霜之巨斧",
+	"ItemDescription":"相传曾是兽人战士扎克的武器，当喊出口令时，这把巨斧会带有冰属性能量 ",
+	"ItemIcon":"frostAxe",
+	"ItemCount":1,
+	"ItemQuality":1,
+	"ItemOperation":1,
+	"ItemType":0,
+	"damage":200
+	},
+
+	{"ItemID":2,
+	"ItemName":"巡林者之弓",
+	"ItemDescription":"巡林者的标配武器，由贤者之森中黄铜木制成，在授予巡林者时，还会举行仪式，由木之精灵对其进行祝福",
+	"ItemIcon":"GreatBowIcon",
+	"ItemCount":1,
+	"ItemQuality":2,
+	"ItemOperation":1,
+	"ItemType":0,
+	"damage":130
+	},
+
+	{"ItemID":10001,
+	"ItemName":"头盔",
+	"ItemDescription":"头盔",
+	"ItemIcon":"helmets",
+	"ItemCount":1,
+	"ItemQuality":2,
+	"ItemOperation":1,
+	"ItemType":1,
+	"strength":20,
+	"intellect":12,
+	"agility":2,
+	"stamina":4,
+	"equipType":1
+	},
+
+	{
+	"ItemID":10002,
+	"ItemName":"盔甲",
+	"ItemDescription":"盔甲",
+	"ItemIcon":"armor",
+	"ItemCount":1,
+	"ItemQuality":2,
+	"ItemOperation":1,
+	"ItemType":1,
+	"strength":30,
+	"intellect":12,
+	"agility":3,
+	"stamina":4,
+	"equipType":0
+	},
+
+	{
+	"ItemID":20001,
+	"ItemName":"生命药水",
+	"ItemDescription":"回复少量生命值",
+	"ItemIcon":"hp",
+	"ItemCount":3,
+	"ItemQuality":3,
+	"ItemOperation":1,
+	"ItemType":2,
+	"hp":100,
+	"mp":0
+	},
+
+	{
+	"ItemID":20002,
+	"ItemName":"魔力药水",
+	"ItemDescription":"回复少量魔法值",
+	"ItemIcon":"mp",
+	"ItemCount":1,
+	"ItemQuality":3,
+	"ItemOperation":1,
+	"ItemType":2,
+	"hp":0,
+	"mp":100
+	}
+
+
+]
