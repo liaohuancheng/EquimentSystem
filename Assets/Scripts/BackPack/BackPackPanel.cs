@@ -88,7 +88,7 @@ public class BackPackPanel : MonoBehaviour
             }
             go.SetActive(true);
             var item = itemList[i];
-            BackPackInfo info = go.GetComponent<BackPackInfo>();
+            ItemProps info = go.GetComponent<ItemProps>();
             Button btn = go.GetComponent<Button>();
             btn.onClick.AddListener(() =>
             {
@@ -102,7 +102,7 @@ public class BackPackPanel : MonoBehaviour
                 go.SetActive(false);
                 continue;
             }
-            info.setData(this .itemList[i]);
+            info.SetData(this .itemList[i]);
         }
 
         

@@ -1,9 +1,10 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
-public class BackPackInfo : MonoBehaviour
+public class ItemProps : MonoBehaviour
 {
     public Image BgIcon;
     public Image Icon;
@@ -11,7 +12,7 @@ public class BackPackInfo : MonoBehaviour
 
 
     Item item;
-    public void setData(Item item)
+    public void SetData(Item item)
     {
         //0:white 1:cyan 2:blue 3:yellow 4:red
         switch (item.ItemQuality)
@@ -36,7 +37,16 @@ public class BackPackInfo : MonoBehaviour
                 break;
         }
         Icon.sprite = Resources.Load<Sprite>("Icons/"+item.ItemIcon);
-        itemCount.text = item.ItemCount.ToString();
+        if (itemCount != null)
+        {
+            itemCount.text = item.ItemCount.ToString();
+        }    
+    }
+    public void OnPointerClick(UnityEngine.EventSystems.PointerEventData eventData)
+    {
+        if(eventData.button == PointerEventData.InputButton.Right)
+        {
 
+        }
     }
 }
