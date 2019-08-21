@@ -37,7 +37,8 @@ class Equipment : Item
     /// <param name="agility"></param>
     /// <param name="stamina"></param>
     /// <param name="equipType"></param>
-    public Equipment(int itemID, string itemName, string itemDescription, string itemIcon, int itemCount, int itemQuality, int itemOpreation, ItemType mItemType,int strength, int intellect, int agility, int stamina, EquipType equipType):base(itemID,itemName,itemDescription,itemIcon,itemCount,itemQuality,itemOpreation,mItemType)
+    /// <param name="itemPrice"></param>
+    public Equipment(int itemID, string itemName, string itemDescription, string itemIcon, int itemCount, int itemQuality, int itemOpreation, ItemType mItemType, int strength, int intellect, int agility, int stamina, EquipType equipType, int itemPrice) : base(itemID, itemName, itemDescription, itemIcon, itemCount, itemQuality, itemOpreation, mItemType, itemPrice)
     {
         this.strength = strength;
         this.intellect = intellect;
@@ -57,8 +58,8 @@ class Equipment : Item
         str += " Quality：" + ItemQuality;
         str += " Opreation：" + ItemOperation;
         str += " Type：" + MItemType;
-        str += " strength："+strength;
-        str += " intellect："+intellect;
+        str += " strength：" + strength;
+        str += " intellect：" + intellect;
         str += " agility：" + agility;
         str += " stamina：" + stamina;
         str += " equipType：" + equipType;

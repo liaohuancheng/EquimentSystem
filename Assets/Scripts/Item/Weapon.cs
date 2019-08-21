@@ -20,7 +20,8 @@ class Weapon : Item
     /// <param name="itemOpreation"></param>
     /// <param name="mItemType"></param>
     /// <param name="damage"></param>
-    public Weapon(int itemID, string itemName, string itemDescription, string itemIcon, int itemCount, int itemQuality, int itemOpreation, ItemType mItemType,int damage) : base(itemID, itemName, itemDescription, itemIcon, itemCount, itemQuality, itemOpreation, mItemType)
+    /// <param name="itemPrice"></param>
+    public Weapon(int itemID, string itemName, string itemDescription, string itemIcon, int itemCount, int itemQuality, int itemOpreation, ItemType mItemType,int damage,int itemPrice) : base(itemID, itemName, itemDescription, itemIcon, itemCount, itemQuality, itemOpreation, mItemType,itemPrice)
     {
         this.damage = damage;
     }

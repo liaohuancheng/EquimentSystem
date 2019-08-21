@@ -20,6 +20,7 @@ public class Item
     public int ItemQuality;//品质
     public int ItemOperation;//道具可进行什么操作
     public ItemType MItemType = ItemType.Unknown;//道具类型
+    public int ItemPrice;//道具价格
 
     /// <summary>
     /// 构造函数
@@ -33,7 +34,7 @@ public class Item
     /// <param name="itemQuality">0:white 1:cyan 2:blue 3:orange 4:red</param>
     /// <param name="itemOpreation"></param>
     /// <param name="mItemType">-1:unknow 0:Weapon 1:equip 2:Potion</param>
-    public Item(int itemID, string itemName, string itemDescription, string itemIcon,  int itemCount, int itemQuality, int itemOpreation, ItemType mItemType)
+    public Item(int itemID, string itemName, string itemDescription, string itemIcon,  int itemCount, int itemQuality, int itemOpreation, ItemType mItemType,int itemPrice)
     {
         ItemID = itemID;
         ItemName = itemName;
@@ -43,7 +44,7 @@ public class Item
         ItemQuality = itemQuality;
         ItemOperation = itemOpreation;
         MItemType = mItemType;
-      
+        ItemPrice = itemPrice;
         //Debug.LogError(ItemID + " " + ItemName + " " + ItemDescription + " " + ItemIcon + " "  + ItemCount + " " + ItemQuality + " " + ItemOperation + " " +
         //        MItemType + " ");
     }

@@ -56,26 +56,27 @@ public class ItemManager
             int itemOperation = (int)_itemData[i]["ItemOperation"];
             Item.ItemType itemType = (Item.ItemType)System.Enum.Parse(typeof(Item.ItemType), _itemData[i]["ItemType"].ToString());
             Item item = null;
+            int itemPrice = (int)_itemData[i]["ItemPrice"];
             switch (itemType)
             {
                 case Item.ItemType.Unknown:
                     break;
                 case Item.ItemType.Weapon:
                     int damage = (int)_itemData[i]["damage"];
-                    item = new Weapon(itemId, itemName, itemDesc, itemIcon, itemCount, itemQuality, itemOperation, itemType, damage);
+                    item = new Weapon(itemId, itemName, itemDesc, itemIcon, itemCount, itemQuality, itemOperation, itemType, damage, itemPrice);
                     break;
                 case Item.ItemType.Equipment:
                     int strength = (int)_itemData[i]["strength"];
                     int intellect = (int)_itemData[i]["intellect"];
                     int agility = (int)_itemData[i]["agility"];
                     int stamina = (int)_itemData[i]["stamina"];
-                    Equipment.EquipType equipType = (Equipment.EquipType)System.Enum.Parse(typeof(Item.ItemType), _itemData[i]["equipType"].ToString()); 
-                    item = new Equipment(itemId, itemName, itemDesc, itemIcon, itemCount, itemQuality, itemOperation, itemType, strength, intellect, agility, stamina, equipType);
+                    Equipment.EquipType equipType = (Equipment.EquipType)System.Enum.Parse(typeof(Item.ItemType), _itemData[i]["equipType"].ToString());
+                    item = new Equipment(itemId, itemName, itemDesc, itemIcon, itemCount, itemQuality, itemOperation, itemType, strength, intellect, agility, stamina, equipType, itemPrice);
                     break;
                 case Item.ItemType.Potion:
                     int hp = (int)_itemData[i]["hp"];
                     int mp = (int)_itemData[i]["mp"];
-                    item = new Potion(itemId, itemName, itemDesc, itemIcon, itemCount, itemQuality, itemOperation, itemType, hp, mp);
+                    item = new Potion(itemId, itemName, itemDesc, itemIcon, itemCount, itemQuality, itemOperation, itemType, hp, mp, itemPrice);
                     break;
 
             }
@@ -83,7 +84,7 @@ public class ItemManager
 
             Debug.Log(item.ToString());
 
-            
+
             Items.Add(item);
         }
     }

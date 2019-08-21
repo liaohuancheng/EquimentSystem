@@ -23,7 +23,8 @@ class Potion : Item
     /// <param name="mItemType"></param>
     /// <param name="hp"></param>
     /// <param name="mp"></param>
-    public Potion(int itemID, string itemName, string itemDescription, string itemIcon, int itemCount, int itemQuality, int itemOpreation, ItemType mItemType, int hp, int mp) : base(itemID, itemName, itemDescription, itemIcon, itemCount, itemQuality, itemOpreation, mItemType)
+    /// <param name="itemPrice"></param>
+    public Potion(int itemID, string itemName, string itemDescription, string itemIcon, int itemCount, int itemQuality, int itemOpreation, ItemType mItemType, int hp, int mp, int itemPrice) : base(itemID, itemName, itemDescription, itemIcon, itemCount, itemQuality, itemOpreation, mItemType, itemPrice)
     {
         this.hp = hp;
         this.mp = mp;
